@@ -1,4 +1,11 @@
 # git_grep_in_branches
+You better use git grep... that script was created before I knew git grep existed :(
+```
+git clone YOUR_REPO
+cd YOUR_REPO
+git fetch origin && git grep WHATEVER $(git branch -r | grep -v HEAD | xargs)
+```
+
 Simple script to search content by means of grep in the branches of a repository.
 
 ### How to isntall
